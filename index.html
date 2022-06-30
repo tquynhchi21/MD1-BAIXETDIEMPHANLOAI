@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="diem" type="text">
+<button onclick="checkDiem()">check</button>
+<h3 id="thanhTich"></h3>
+
+
+<script>
+    function checkDiem() {
+        let a = +document.getElementById("diem").value;
+        if (a < 50 ){
+            document.getElementById("thanhTich").innerHTML = "yếu kém"
+        }else {
+            if (a < 65 ){
+                document.getElementById("thanhTich").innerHTML = "trung bình"
+            }else {
+                if (a < 80 ){
+                    document.getElementById("thanhTich").innerHTML = "khá"
+                }else {
+                    if (a < 100){
+                        document.getElementById("thanhTich").innerHTML = "Giỏi :)"
+                    }else {
+                        document.getElementById("thanhTich").innerHTML = "sai "
+                    }
+                }
+
+            }
+
+        }
+
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
